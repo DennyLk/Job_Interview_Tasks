@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<!-- Defines the document type and version of HTML -->
+<html lang="en">
+  <!-- The root element of the HTML document, specifies the language as English -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the HTML document (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Map Display</title>
+    <!-- The title of the HTML document, shown in the browser's title bar or page tab -->
+
+    <!-- Link to the OpenLayers CSS for styling the map -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.5.0/css/ol.css"
+    />
+    <!-- Link to a custom stylesheet for additional styling -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Script tag for the OpenLayers library, deferred to ensure it loads after the HTML is parsed -->
+    <script
+      src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.5.0/build/ol.js"
+      defer
+    ></script>
+    <!-- Link to a custom JavaScript file for the application's logic, also deferred -->
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- A div element that will serve as the container for the OpenLayers map -->
+    <div id="map" class="map"></div>
+  </body>
+</html>
